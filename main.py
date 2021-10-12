@@ -53,7 +53,7 @@ def write_custom_text(text):
     
     st.markdown(f'<p class="text-font centeralize-content">{text}</p>', unsafe_allow_html=True)
 
-def write_disclaimer():
+def write_disclaimer(text):
     st.markdown("""
         <style>
         .custom_footer {
@@ -64,11 +64,11 @@ def write_disclaimer():
         }
         </style>
         """, unsafe_allow_html=True)
-    st.markdown(f'<p class="custom_footer">This is not an official tool by MiHoYo. Source code is available on <a href ="https://github.com/lhinjy/Genshin_Maintenance">github</a></p>', unsafe_allow_html=True)
+    st.markdown(f'<p class="custom_footer">{text}', unsafe_allow_html=True)
 
 
 def main():
-    write_disclaimer()
+    write_disclaimer("This is not an official tool by MiHoYo. Source code is available on <a href ='https://github.com/lhinjy/Genshin_Maintenance'>github</a></p>'")
 
     write_custom_text("Genshin Impact 2.2 Maintenance Starts At:")
     country_chosen,country_button, utc_timezone_chosen, utc_timezone_button = display_user_input()
@@ -88,7 +88,7 @@ def main():
             formatted_datemonth, formatted_time = data_utils.date_time_formatter(local_maintenance_datetime)
         except:
             pass
-
+    write_disclaimer("Time format is in 24-Hour")
     write_custom_header(formatted_datemonth)
     write_custom_header(formatted_time)
 
