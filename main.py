@@ -18,7 +18,7 @@ def write_custom_header(text):
     st.markdown("""
     <style>
     .header-font {
-        font-size: 18vw !important;
+        font-size: 11vw !important;
     }
     .centeralize-content {
         display:flex;
