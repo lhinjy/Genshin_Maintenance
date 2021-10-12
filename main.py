@@ -64,7 +64,7 @@ def write_disclaimer():
         }
         </style>
         """, unsafe_allow_html=True)
-    st.markdown(f'<p class="custom_footer">This is not an official tool by MiHoYo. Source code is available at</p>', unsafe_allow_html=True)
+    st.markdown(f'<p class="custom_footer">This is not an official tool by MiHoYo. Source code is available on <a href ="https://github.com/lhinjy/Genshin_Maintenance">github</a></p>', unsafe_allow_html=True)
 
 
 def main():
