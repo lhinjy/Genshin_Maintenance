@@ -2,8 +2,9 @@ import datetime
 import pytz 
 
 utc = pytz.utc
-# 2.2: 13th october at 6am UTC+8, 10pm at UTC
-MAINTENANCE_DT = datetime.datetime(2021,10,12,22,0,0, tzinfo=utc)
+# 2.2: 13th october 2021 at 6am UTC+8, 10pm at UTC -> (2021, 10, 12 , 22)
+# 2.4: 5th Jan 2022 at 6am UTC+8, 10pm at UTC -> (2022, 1, 4, 22)
+MAINTENANCE_DT = datetime.datetime(2022,1,4,22, tzinfo=utc)
 
 def date_time_formatter(local_maintenance_datetime):
     format_datemonth = '%d %b'

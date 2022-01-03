@@ -110,6 +110,7 @@ def custom_footer():
             left: 0;
             bottom: 0;
             width: 100vw;
+            margin-bottom: -10px;
             background-color: #FCFBF9;
             color: #2B3034;
             text-align: center;
@@ -117,7 +118,6 @@ def custom_footer():
         </style>
         <div class="footer">
             <i class="fas fa-heart"></i>
-            <p>Developed with  <a href="https://github.com/lhinjy"  target="_blank"> ❤ </a> by a frustrated Genshin player</p>
             <p> <a href="https://github.com/lhinjy/Genshin_Maintenance"  target="_blank">GitHub</a> || <a href="https://ko-fi.com/lhinjy"  target="_blank">Ko-fi</a></p>
         </div>
         """
@@ -127,7 +127,7 @@ def custom_footer():
 def main():
     # st.write("This is not an official tool by MiHoYo. Source code is available on my [Github](https://github.com/lhinjy/Genshin_Maintenance)")
     write_disclaimer("This is not an official tool by MiHoYo.")
-    write_custom_text("Genshin Impact 2.2 Maintenance Starts At:")
+    write_custom_text("Genshin Impact 2.4 Maintenance Starts At:")
     country_chosen,country_button, utc_timezone_chosen, utc_timezone_button = display_user_input()
     
     formatted_datemonth = ""
