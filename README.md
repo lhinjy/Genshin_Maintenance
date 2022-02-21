@@ -24,4 +24,4 @@ Simple!
 <b>streamlit run main.py</b>
 
 # Some final words
-I really REALLY REALLY wanted to implement the 3rd option( 1st:country, 2nd:time zone), by geolocation. Sadly, the idea is not visible due to the potential costs :(
+I really REALLY REALLY wanted to implement the 3rd option( 1st:country, 2nd:time zone), by geolocation. Sadly, the idea is not feasible due to the potential costs :(
